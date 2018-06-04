@@ -1,0 +1,73 @@
+/*
+TypeAhead style file. Needed for TypeAhead JS File
+*/
+/* 
+    Created on : Dec 6, 2016, 3:17:36 PM
+    Author     : tkasozi
+*/
+
+.no-result-hr{
+    min-width: 100%;
+    height :fit-content;
+}
+.highlight-searchTab{
+    font-size: 1rem;
+    font-weight: 300;
+    min-width: 100%;
+    height :fit-content;
+    cursor : pointer;
+    padding-left: 1em;
+}
+.highlight-searchTab:hover{
+    background-color: #36e3f9;
+    /*background-color: #ccff00;*/
+}
+
+.highlight{
+    background-color: #36e3f9;
+    /*background-color: #ccff00*/
+}
+
+
+.input-hidden-cursor{
+    border: none;
+    color: transparent;
+    text-shadow: 0 0 0 #232323;
+    text-align: left;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    /*pointer-events*/
+    cursor: pointer;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.fa-search .fa{
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.fa{
+    /*font-size: 1.5em;*/
+    color:  lightgray;
+}

@@ -1,0 +1,60 @@
+{
+    "title": "Dashboard",
+    "section": "Welcome Ar Raheem Academy",
+    "img": ["image.jpeg"],
+    "body": "The Prophet (PBUH) said: \" Knowledge from which no benefit is derived is like a treasure out of  which nothing is spent in the cause of God.\" (Al-Tirmidhi, Hadith 108)",
+    "read_more": {
+        "link": "/",
+        "read": "Providing our children with quality education in a conducive Islamic environment is our collective responsibility. Facing the challenges on this path requires our united efforts. To shape the future of our coming generations. we must come together as one ummah. It is time to teach our children Deen Allah and raise them in the light of Quran and Sunnah."
+    },
+    "searchplaceholder": "For Example: classes, enroll, contacts, directions",
+    "news": [
+        
+    ],
+    "events": [
+         {
+            "editDate": ["2017","Apr", "7"],
+            "title": "A Fundraising Dinner Event",
+            "date": ["APR", "8th"],
+            "year": "2017",
+            "info": "Billerica Islamic Center Invites You.",
+            "detail": [
+                       "On Saturday 8th April 2017, Billerica Islamic Center (775 Boston RD, Billerica MA 01821) is holding a fundraiser at 7:00 PM.",
+                       "For more information contact the Fundraising Team at 508-404-3820"
+                      ]
+        },{
+            "editDate": ["2017","Feb","15"],
+            "title": "Fundraising Event Part Two",
+            "date": ["FEB", "18th"],
+            "year": "2017",
+            "info": "Ar Raheem Academy Fundraising Event After Isha Salat.",
+            "detail": [
+                       "The Prohept (P.B.U.H) said: 'The believer's shade on the day of Resurrection will be his charity.'",
+                       "Therefore, we urge you brothers & sisters to join us for a Fundraising Event after Isha Salat this Saturday February 18, 2017 at Waltham Masjid.",
+                       "Please note: Dinner will be served on the 18th, February after Halaqa."
+                      ]
+        },{
+            "editDate": ["2017","Feb","15"],
+            "title": "Fundraising Event Part One",
+            "date": ["FEB", "17th"],
+            "year": "2017",
+            "info": "Ar Raheem Academy Fundraising Event After Jummah Salat.",
+            "detail": [
+                        "Since the School is operated mostly on donations; on Friday February 17, 2017 we will hold a Fundraising Event after Jummah prayer in a 1st of a two day Event."
+                        , "You're all welcome to join us."
+                      ]
+        }
+    ],
+    "tags": [
+        {
+            "keyword": ["about Us","Quran and Sunnah"],
+            "page": "about"
+        }, {
+            "keyword": ["graduate","academics","progessive learning"],
+            "page": "academics"
+        },{
+            "keyword": ["future generations","community"],
+            "page": "vision"
+        }
+    ]
+}

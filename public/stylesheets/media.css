@@ -1,0 +1,98 @@
+/*
+    screen mobile and desktop 
+*/
+/* 
+    Created on : Dec 19, 2016, 10:48:55 AM
+    Author     : tkasozi
+*/
+
+/* Smartphones ----------- */
+
+.only-mobile {visibility: hidden;}
+.no-xs-mobile, .no-mobile{visibility: visible;}
+
+/* Smartphones ----------- */
+@media only screen and (max-width: 950px) {
+    .only-mobile{visibility: visible;}
+    .no-mobile{visibility: hidden;}
+}
+
+/* For landscape, we want the tool bar stick on the left */
+@media screen and (orientation: landscape) and (max-width: 568px) {
+    .no-xs-mobile{display: none;}
+}
+
+/* For portrait, we want the tool bar on top */
+
+@media screen and (orientation: portrait) {
+    .nav-ul{
+        font-size: smaller
+    }
+    .mobile-potrait{display: block}
+    .no-mobile-potrait{
+        display: none;
+    }
+    #tags{
+        font-size: 1.3rem;
+    }
+    .mobile{display: none;}
+    .div-padding-top{
+        padding-top: 1.5em;
+        clear:both;
+    }
+    #header{
+        font-size: .7rem;
+    }
+    #content{
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 1rem;  
+        word-wrap: break-word;
+        font-weight: 300;
+    }
+
+    #content p:first-line{
+        line-height:  normal;
+    }
+}
+
+/* For landscape, we want the tool bar stick on the left */
+@media screen and (orientation: landscape) and (max-width: 950px) {
+    .mobile-landscape{
+        display:  block;
+    }
+    .mobile{display: block}
+    .div-padding-top{
+        padding-top: 3em;
+        clear:both;
+    }
+    #content{
+        margin-top: 0em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: .75rem;  
+        word-wrap: break-word;
+        font-weight: 300;
+    }
+    #content p:first-line{
+        line-height:  normal;
+    }
+    .no-mobile{display: none}
+}
+
+@media screen and (orientation: landscape){
+    .mobile-potrait{display: none}
+}
+.section-full {
+    height:100vh;
+    min-height:100vh;
+}
+
+@media screen and (orientation: portrait) and (max-width: 568px) {
+    .nav-ul{
+        font-size:.75rem
+    }
+    .no-xs-mobile{display: none;}
+}
+

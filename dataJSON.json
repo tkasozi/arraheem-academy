@@ -1,0 +1,144 @@
+{
+    "save_flag": false,
+    "pages": [
+        {
+            "id": 1,
+            "page": "about",
+            "title": "About Us",
+            "section": "About Us",
+            "img": ["image.jpeg","office.jpeg"],
+            "body": "",
+            "read_more": {
+                "link": "",
+                "read": ""
+            },
+            "paragraphs": [
+                "Providing our children with quality education in a conducive Islamic environment is our collective responsibility. Facing the challenges on this path requires our united efforts. To shape the future of our coming generations. we must come together as one ummah. It is time to teach our children Deen Allah and raise them in the light of Quran and Sunnah."
+            ]
+        },
+        {
+            "id": 2,
+            "page": "academics",
+            "title": "Academics",
+            "section": "Academics",
+            "img": ["academics/class2.jpeg", "academics/class1.jpeg"],
+            "body": "",
+            "read_more": {
+                "link": "",
+                "read": ""
+            },
+            "paragraphs": [
+                "Students attending Ar-Raheem Academy will be required to show progressive learning and improvement in English, Math and Science along with other electives. Students will be encouraged to demonstrate continuous self-improvement. Graduating students will have a strong foundation to pursue a professional degree of their choice."
+                        , "Academic Studies will be administered by a state certified teacher who has strong knowledge of the curriculum and strategic planning. Each subject will be taught by a teacher who has expertise in the respective area of the curriculum."
+            ]
+        },
+        {
+            "id": 3,
+            "page": "vision",
+            "title": "Our Vision",
+            "section": "Our Vision",
+            "img": ["image.jpeg"],
+            "body": "",
+            "read_more": {
+                "link": "",
+                "read": ""
+            },
+            "paragraphs": [
+                "Ar-Raheem Academy is traditional Islamic studies dedicated to transmitting the sacred knowledge to future generations. Students will receive a holistic education which meets their spiritual, academic, intellectual, physical and social needs."
+                        , "We are dedicated in teaching our students the best manners to value and respect their parents, teachers, neighbors and community."
+            ]
+        },
+        {
+            "id": 4,
+            "page": "courses",
+            "title": "Islamic Courses",
+            "section": "Islamic Courses",
+            "img": ["academics/class2.jpeg","image.jpeg"],
+            "body": "",
+            "read_more": {
+                "path": "",
+                "read": ""
+            },
+            "paragraphs": []
+        },
+        {
+            "id": 5,
+            "page": "studies",
+            "title": "Academic Studies",
+            "section": "Academic Studies",
+            "img": ["image.jpeg","computerLab.jpeg"],
+            "body": "",
+            "read_more": {
+                "link": "",
+                "read": ""
+            },
+            "paragraphs": []
+        },
+        {
+            "id": 6,
+            "page": "directory",
+            "title": "Directory",
+            "section": "Directory",
+            "img": ["image.jpeg"],
+            "body": "",
+            "read_more": {
+                "link": "",
+                "read": ""
+            },
+            "paragraphs": []
+        },
+        {
+            "id": 7,
+            "page": "contact",
+            "title": "Contact Us",
+            "section": "Contact Us",
+            "img": ["image.jpeg"],
+            "contacts": [
+                {
+                    "name": "Mohammed Asifuddin",
+                    "phone": "508-404-3820"
+                },
+                {
+                    "name": "Taha Siddiqui",
+                    "phone": "508-361-8357"
+                },
+                {
+                    "name": "Taimur Khan",
+                    "phone": "617-953-6395"
+                }],
+            "read_more": {
+                "link": "",
+                "read": ""
+            },
+            "paragraphs": []
+        },
+        {
+            "id": 8,
+            "page": "mission",
+            "title": "Our Mission",
+            "section": "Our Mission",
+            "img": ["academics/class2.jpeg"],
+            "body": "",
+            "read_more": {
+                "link": "",
+                "read": ""
+            },
+            "paragraphs": [
+                "At Ar-Raheem Academy, we aspire to provide students with the best standard of Islamic and Academic education so that our children can contribute positively to  the society  and develop a strong foundation in moral  values and responsibilities grounded in the Quran and Sunnah."
+            ]
+        },
+        {
+            "id": 9,
+            "page": "register",
+            "title": "Registration",
+            "section": "Registration",
+            "img": ["image.jpeg"],
+            "body": "",
+            "read_more": {
+                "link": "",
+                "read": ""
+            },
+            "paragraphs": []
+        }
+    ]
+}

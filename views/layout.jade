@@ -1,0 +1,95 @@
+doctype html
+html
+    head
+        -var page_image= img
+        title=title
+        //Bootstrap icons
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+        link(rel='stylesheet' href="/js/libs/twitter-bootstrap/css/bootstrap.min.css")
+        
+        //initial-scale=0.85,
+        meta(name="viewport" content="width=device-width, initial-scale=.85, maximum-scale=1,    user-scalable=yes")
+
+        block var
+        
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/nav-bar.css')
+        link(rel='stylesheet', href='/stylesheets/footer.css')
+        link(rel='stylesheet', href='/stylesheets/typeahead.css')
+        link(rel='stylesheet', href='/stylesheets/text-style.css')
+        link(rel='stylesheet', href='/stylesheets/special-list.css')
+        link(rel='stylesheet', href='/stylesheets/media.css')
+
+        script(src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+        script(src = "https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js")
+        script(src="/js/libs/twitter-bootstrap/js/bootstrap.min.js")  
+        script(src="/js/init.js")
+
+    body(onLoad="JavaScript:reload_dir()")
+        div.container
+            div#header
+                nav#navbar.navbar.navbar-inverse.navbar-static-top
+                     div.col-md-12.nav-container
+
+                         div.no-mobile
+                             div.col-md-4
+                                 //include ../views/template/logo.jade
+                                 div.logo#logo(style="z-index:10;  position: absolute; top: 0; left: 7em")
+                                     img(src="/images/logo.JPG")
+                             div.col-md-2
+
+                         // use javascrpt
+                         div
+                            ul.list-inline.nav-ul
+                                li.list-inline-item.nav-li
+                                    a(href='/contact') CONTACT
+                                li.list-inline-item.nav-li
+                                    a(href='/directory')  DIRECTORY
+                                li.list-inline-item.nav-li
+                                    a(href='/mission') MISSION
+                                li.list-inline-item.nav-li
+                                    a(href='/academics') ACADEMICS
+                                li.only-mobile.list-inline-item.nav-li
+                                  a(href="/dashboard" data-toggle="tooltip" data-placement="bottom" title="Home Page") DASHBOARD
+                            //this missing larger smartphones.
+                     //.section-full      
+                div.carousel.slide#page-description(data-ride="carousel" style="max-width: 100%;")
+                        
+                    div.carousel-inner(role="listbox" style="max-width: 100%;")
+                        -for (var i = 0; i < page_image.length; i++)
+                            if i === 0
+                                div.carousel-item.active(style="max-width: 100%; height: 35rem;")
+                                    img.img-fluid.img-responsive(src="/images/#{page_image[i]}" style="max-width: 100%; height: auto;")
+                            else
+                                div.carousel-item(style="max-width: 100%; height: 35rem;")
+                                    img.img-fluid.img-responsive(src="/images/#{page_image[i]}" style="max-width: 100%; height: auto;")
+                        
+                        if title === "Dashboard"
+                            div.carousel-caption
+                                   h3= section
+                                   p= body
+                
+                    ul.list-group#item-list.no-mobile(style="font-size:1rem;")
+                         li.list-group-item.main-list-group-item.main-list-hoover
+                             a.main-a(href="/about")
+                                  span About
+                         li.list-group-item.main-list-group-item.main-list-hoover
+                              a.main-a(href="/studies")
+                                  span Academic Studies
+                         li.list-group-item.main-list-group-item.main-list-hoover
+                              a.main-a(href="/courses")
+                                  span Islamic Courses
+                         li.list-group-item.main-list-group-item.main-list-hoover
+                              a.main-a(href="/vision")
+                                  span Our Vision
+                         li.list-group-item.main-list-group-item#large-only.main-list-hoover
+                            a.main-a(href="/dashboard" title="Home Page")
+                                span Dashboard
+                                
+            block content 
+            
+
+            include ../views/template/footer.jade
+

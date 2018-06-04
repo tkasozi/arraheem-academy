@@ -1,0 +1,64 @@
+/*
+design for the footer section of Ar.Raheem.Academy App
+*/
+/* 
+    Created on : Nov 17, 2016, 6:30:01 PM
+    Author     : tkasozi
+*/
+.page-wrap:after {
+    content: "";
+    display: block;
+    height: 25em;
+}
+
+#footer{
+    /*display: none;*/
+    width:100%;
+    border:0px;
+    min-height: 25em;
+    background-color: #232323;
+    color: #7b7b7b;
+    font-size: .95rem;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #7b7b7b;
+}
+
+#footer a:hover{
+    color: #fff;
+}
+
+#footer p label{
+    font-size: .8rem;
+    color: #fff;
+}
+
+#footer div ul li{
+    border: 0px;
+}
+
+ul.footer-list-group-item {
+    padding: 0;
+    border:0px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1rem;
+    list-style: none
+}
+
+.footer-logo img{
+    width: auto;
+    max-width: 15.625rem;
+    max-height: 5.625rem;
+    box-sizing: content-box;
+    /*border: 1.72vw solid #fff;*/
+    border: .59vw solid #232323;
+    padding: 0px;
+}
+.main-footer-body{
+    padding-top: 3em;
+    padding: 0;
+    position: relative;
+    min-height: 25em;
+}

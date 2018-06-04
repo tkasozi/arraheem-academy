@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.clientproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
+            <name>ar.raheem.academy</name>
+        </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+            <library name="twitter-bootstrap" version="4.0.0-alpha.5">
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-flex.css" path="css/bootstrap-flex.css"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-flex.css.map" path="css/bootstrap-flex.css.map"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-flex.min.css" path="css/bootstrap-flex.min.css"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-flex.min.css.map" path="css/bootstrap-flex.min.css.map"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-grid.css" path="css/bootstrap-grid.css"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-grid.css.map" path="css/bootstrap-grid.css.map"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-grid.min.css" path="css/bootstrap-grid.min.css"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-grid.min.css.map" path="css/bootstrap-grid.min.css.map"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-reboot.css" path="css/bootstrap-reboot.css"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-reboot.css.map" path="css/bootstrap-reboot.css.map"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-reboot.min.css" path="css/bootstrap-reboot.min.css"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap-reboot.min.css.map" path="css/bootstrap-reboot.min.css.map"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap.css" path="css/bootstrap.css"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap.css.map" path="css/bootstrap.css.map"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap.min.css" path="css/bootstrap.min.css"/>
+                <file localPath="public/js/libs/twitter-bootstrap/css/bootstrap.min.css.map" path="css/bootstrap.min.css.map"/>
+                <file localPath="public/js/libs/twitter-bootstrap/js/bootstrap.js" path="js/bootstrap.js"/>
+                <file localPath="public/js/libs/twitter-bootstrap/js/bootstrap.min.js" path="js/bootstrap.min.js"/>
+            </library>
+            <library name="validator" version="6.1.0">
+                <file localPath="public/js/libs/validator/validator.js" path="validator.js"/>
+                <file localPath="public/js/libs/validator/validator.min.js" path="validator.min.js"/>
+            </library>
+            <library name="validatorjs" version="2.0.0">
+                <file localPath="public/js/libs/validatorjs/validator.js" path="validator.js"/>
+                <file localPath="public/js/libs/validatorjs/validator.min.js" path="validator.min.js"/>
+            </library>
+        </libraries>
+    </configuration>
+</project>

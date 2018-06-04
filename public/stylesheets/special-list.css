@@ -1,0 +1,40 @@
+/**
+*   News & Events lists.
+*/
+/* 
+    Created on : Jan 6, 2017, 4:07:54 PM
+    Author     : tkasozi
+*/
+#news, #events{
+    overflow-x: auto;
+    /*overflow-y: hidden;*/
+}
+ul#newsUl, ul#eventsUl{
+    /*width: fit-content; does not work on mobile?*/
+    min-width: fit-content;
+    width: 255rem;
+    height: 13rem;
+}
+
+.newsItem, .eventItem{
+    width: 13rem;
+    height: 100%; 
+    float: left;
+}
+
+#news::-webkit-scrollbar, #events::-webkit-scrollbar{
+    display: none;
+}
+#news::-webkit-scrollbar-button, #events::-webkit-scrollbar-button {
+    display: none;
+}
+#news::-webkit-scrollbar-track, #events::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+#news::-webkit-scrollbar-thumb, #events::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}

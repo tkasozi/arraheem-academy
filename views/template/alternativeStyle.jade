@@ -1,0 +1,41 @@
+//-
+    Talik Kasozi <talik.aziizi@gmail.com>
+    
+    alternativeStyle.jade 
+    December 13, 2016
+    
+    designs an alternative style for the website. Used by over 90% of the app
+
+div#text-content(style="min-height: 50em;")
+
+    div.col-sm-3#altOther.only-mobile.no-xs-mobile(style="background-color: white; height:50em")
+        h2= title
+        hr
+        //span= #{monthRep("Mar")}
+        //More stuff go here 
+            
+    //screen orientation *smartphones.
+    div.col-sm-9
+       div.ARAseal
+       div(style="position:absolute; top: 0%")
+            if title === "Directory"
+                div#content
+            else if title === "Contact Us"
+                 //div.text-lg-center.header Contact Information
+                 div#contact-content
+                     div.h1 Contact Information
+                     hr
+                     for contact in contacts
+                         p(style="text-align: left") 
+                             span= contact.name
+                             &nbsp; &nbsp;
+                             em= contact.phone
+            else     
+                 div#content
+                     if(paragraphs && paragraphs.length > 0)
+                          for paragraph in paragraphs
+                              p= paragraph
+                              br
+                     else
+                         em 
+                            bold To be Updated Soon...

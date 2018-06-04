@@ -1,0 +1,91 @@
+/*
+    screen mobile and desktop 
+*/
+/* 
+    Created on : Dec 19, 2016, 10:48:55 AM
+    Author     : tkasozi
+*/
+
+/* Smartphones ----------- */
+
+.only-mobile {visibility: hidden;}
+.no-xs-mobile, .no-mobile{visibility: visible;}
+
+/* Smartphones ----------- */
+@media only screen and (max-width: 800px) {
+    .only-mobile{visibility: visible;}
+    .no-mobile{visibility: hidden;}
+}
+
+@media screen and (orientation: portrait) and (max-width: 568px) {
+    .no-xs-mobile{display: none;}
+}
+/* For landscape, we want the tool bar stick on the left */
+@media screen and (orientation: landscape) and (max-width: 568px) {
+    .no-xs-mobile{display: none;}
+}
+
+/* For portrait, we want the tool bar on top */
+
+@media screen and (orientation: portrait) {
+    .no-mobile-potrait{
+        display: none;
+    }
+    #tags{
+        font-size: 1.3rem;
+    }
+    .mobile{display: none;}
+    .div-padding-top{
+        padding-top: 1.5em;
+        clear:both;
+    }
+    #header{
+        font-size: .7rem;
+    }
+    #contact-content, #content{
+        margin-top: 3em;
+        margin-left: 3em;
+        margin-right: 3em;
+        font-size: 1.3rem;  
+        word-wrap: break-word;
+        /*font-weight: 300;*/
+    }
+
+    #content p:first-line{
+        line-height:  normal;
+    }
+}
+
+/*mobile device*/
+@media screen and (orientation: landscape) {
+    #content p:first-line{
+        line-height:  normal;
+    }
+    .mobile-landscape{
+        display:  block;
+    }
+    .mobile{display: block}
+    .div-padding-top{
+        padding-top: 3em;
+        clear:both;
+    }
+    #header{
+        font-size: 1rem;
+    }
+    #contact-content, #content{
+        margin-top: 3em;
+        margin-left: 3em;
+        margin-right: 3em;
+        font-size: 1.3rem;  
+        word-wrap: break-word;
+        /*font-weight: 300;*/
+    }
+}
+
+.section-full {
+    height:100vh;
+    min-height:100vh;
+}
+
+
+

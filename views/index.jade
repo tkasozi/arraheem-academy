@@ -1,0 +1,144 @@
+//Talik A. Kasozi
+//December 4, 2016 4:42pm
+//home page body implemented below
+//
+ 
+extends layout
+
+block content
+
+    -var newsLength=news.length
+    -var eventLength=events.length
+    //.container.main-page-body
+    div#body.page-wrap(style="font-size: .9rem; font-weight: 100;")
+        //search Section
+        div.row#search-space
+            //.col-lg-2.col-xs-2
+            div.col-md-2
+            //.col-lg-8.col-xs-8
+            div.col-md-8
+                br
+                //PayPal Donate Button 
+                form(action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank")
+                    input(type="hidden" name="cmd" value="_s-xclick")
+                    input(type="hidden" name="hosted_button_id" value="E6QGT5YS2RRH2")
+                    //.no-select disables the highlight around the #[input]
+                    input.no-select(type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!")
+                    img( alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1")
+                br
+                br
+                br
+                div.row(style="text-align: center; font-size: 1.7rem;")
+                    
+                    
+                    label
+                        h5(style="padding-bottom: 1em;") WHAT DO YOU NEED?
+                    p By using keywords, quickly find the information you need below.
+                    //#36e3f9 <- blue-highlight
+                
+                div
+
+                    div(style="text-align: left; width: 100%; background-color: #36e3f9; height: 3em; padding: .75em; font-size: 1.1rem;")
+                        h7 WHERE DO I FIND?
+
+                    div.inner-addon.left-addon(style="height: 3rem; background-color: white; font-size: 1.1rem;")
+                        
+                        input#tags(autocomplete="off" data-provide="typeahead" type="search"
+                                placeholder="#{searchplaceholder}"
+                                style="padding-left: 1.9rem; outline: none; border:0; width:100%; padding-top: 5px;font-style: italic")
+                        i.glyphicon.fa.fa-search#fa-search-color(onclick="link()")
+            //.col-lg-2.col-xs-2        
+            div.col-md-2
+        
+        if newsLength > 0
+            div.row.div-padding-top(style="text-align: center; padding-bottom: 1.7em")
+
+                label 
+                    //.mobilePopup(data-placement="bottom" data-toggle="tooltip" title="Rotate device to see News.")
+                    h5 NEWS
+                    i.card-info.mobile-potrait Rotate Device To See News.
+        //News Section
+        div.row.no-mobile-potrait.mobile-landscape.col-sm-12.col-md-12.col-xs-12#newsSection
+            
+            div.col-md-1.col-xs-1.col-sm-1(style="height: 13rem;")
+                a.newsLeft.hidden(role="button" data-slide="prev" aria-hidden="true" style="background-color: none;")
+                    span.glyphicon.glyphicon-menu-left(style="font-size:3rem; position: absolute; top: 34%; right: 13%")
+            
+            div.col-md-10.col-xs-10.col-sm-10#news
+                ul.list-group.list-inline#newsUl(style="text-align: center; ")
+                    if newsLength === 0
+                        h5
+                            code.alert-warning Currently, there's no News.
+                    else
+                        -for (var i = 0; i < newsLength; i++)
+                            li.list-inline-item.newsItem( data-target="#newsModal" aria-hidden="true"
+                                style="list-style:none; cursor : pointer; border-right: 1px solid #878787;")
+                                h6= news[i].title
+                                p= news[i].info
+                                label.pull-left(style="position: absolute; bottom: 0; left: 1%") posted: &nbsp;
+                                    span.daysAgoNews
+            div.col-md-1.col-xs-1.col-sm-1(style="height: 13rem;")
+                a.newsRight.hidden(role="button" data-slide="next" aria-hidden="true" style="background-color: none;")
+                    span.glyphicon.glyphicon-menu-right(style="font-size:3rem; position: absolute; top: 34%; left: 13%")
+        
+        div.modal#newsModal(tabindex="-1" role="dialog" aria-labelledby="newsModalLabel")
+            div.modal-dialog(role="document")
+                div.modal-content
+                    div.modal-header
+                        button.close(data-dismiss="modal" aria-label="Close" type="button")
+                            span(aria-hidden="true") &times;
+                            
+                        h4.modal-title#newsModalLabel
+                        
+                    div.modal-body#newsModal-body
+
+                    
+        //Events Section
+        div.row.div-padding-top(style="text-align: center; padding: 1em")
+                label  
+                    h5 EVENTS
+                    i.card-info.mobile-potrait Rotate Device To See Events.
+                    
+        div.row.no-mobile-potrait.mobile-landscape#eventsSection
+        
+            div.col-md-1.col-xs-1(style="height: 13rem;")
+                a.eventsLeft.hidden(role="button" data-slide="prev" aria-hidden="true" style="background-color: none;")
+                    span.glyphicon.glyphicon-menu-left(style="font-size:3rem; position: absolute; top: 34%; right: 13%")
+            
+            div.col-md-10.col-xs-10#events
+                ul.list-group.list-inline#eventsUl(style="text-align: center;")
+                    if eventLength === 0
+                        h5
+                            code.alert-warning Currently, there are no new Events.
+                    else
+                        //-for(var i = 0; i < 10; i++)
+                        for event in events
+                            li.list-inline-item.col-sm-2.eventItem( data-target="#eventsModal" aria-hidden="true"
+                            style="list-style:none; margin:3px; cursor : pointer;  padding: 1px; border-right: 1px solid #878787;") 
+
+                                    h6.text-center= event.title
+
+                                    em.label-date
+                                        h6= event.date[0]
+                                        h5= event.date[1]
+                                    span= event.info
+                                    label.pull-left(style="position: absolute; bottom: 0; left: 1%") posted: &nbsp;
+                                        //= event.editDate
+                                        span.daysAgoEvent
+
+            div.col-md-1.col-xs-1(style="height: 13rem;")
+                a.eventsRight.hidden(role="button" data-slide="next" aria-hidden="true" style="background-color: none;")
+                    span.glyphicon.glyphicon-menu-right(style="font-size:3rem; position: absolute; top: 34%; left: 13%")
+        
+        div.modal#eventsModal(tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel")
+            div.modal-dialog(role="document")
+                div.modal-content
+                    div.modal-header
+                        button.close(data-dismiss="modal" aria-label="Close" type="button")
+                            span(aria-hidden="true") &times;
+                            
+                        div.modal-title#eventsModalLabel
+                        
+                    div.modal-body#eventsModal-body
+
+    script(src="/js/indexUI.js")

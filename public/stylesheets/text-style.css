@@ -1,0 +1,105 @@
+/*
+Styling text
+*/
+/* 
+    Created on : Dec 14, 2016, 10:17:43 PM
+    Author     : tkasozi <talik.aziizi@gmail.com>
+*/
+
+#altOther, #header,#page-description, #item-list a , .modal-body{
+    font-size: 1rem;
+    font-weight: 300;
+}
+/*Flash-cards*/
+.newsItem{
+    font-size: 1rem;
+}
+/*header section*/
+.main-list-group-item{
+    padding: .7rem;
+    padding-bottom: 0px;
+    width: fit-content;
+    color: #fff;
+    border:0px;
+    background-color: rgba(255, 255, 255, 0);
+    float: right;
+    /*text-align:  center;*/
+}
+
+#item-list a{
+    text-decoration: none;
+    color: #fff;
+}
+#item-list{
+    width: 100%;
+    position:absolute;
+    top: 0%; 
+    padding-left: 3px; 
+    padding-right: 3px;
+}
+
+
+/*bg-image with page description*/
+#page-description{
+    color: #fff;
+    position: relative;
+    padding: 0px;
+    background-position: center;
+    background-color: #232323;
+}
+
+/*end of bg-image w/ */
+
+/*end of hearder section*/
+
+#contact-content, #content{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 1.1rem;  
+    word-wrap: break-word;
+    /*font-weight: 300;*/
+}
+#content p{
+    font-size: 1.1rem;
+}
+
+#content p:first-letter, .modal-body p:first-letter{
+    font-size: 2.1rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    padding-left: .7rem;
+}
+
+#content p:first-line{
+    line-height:  normal;
+}
+
+.text-discription{
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.text-discription p{
+    font-size: 1.1rem;  
+}
+/*end of layout description*/
+
+.eventsItem .newsItem{
+    color: #000;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.label-date{
+    margin-right: .7rem;
+    text-align: center;
+    color: #232323; 
+    background-color: #098c37;
+    /*background-color: white;*/
+    float: left; 
+    width: 3.5em; 
+    height: 3.5em;
+}
